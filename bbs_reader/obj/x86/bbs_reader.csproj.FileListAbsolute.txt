@@ -1,0 +1,14 @@
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\bin\x86\bbs_reader.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\bin\x86\bbs_reader.exe.manifest
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\bin\x86\bbs_reader.application
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\bin\x86\bbs_reader.exe
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\bin\x86\NSoup.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\obj\x86\bbs_reader.Form1.resources
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\obj\x86\bbs_reader.Form2.resources
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\obj\x86\bbs_reader.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\obj\x86\bbs_reader.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\obj\x86\bbs_reader.exe.manifest
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\obj\x86\bbs_reader.application
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\obj\x86\bbs_reader.exe
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\obj\x86\bbs_reader.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\obj\x86\bbs_reader.Form3.resources
