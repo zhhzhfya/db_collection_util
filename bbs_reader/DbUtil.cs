@@ -73,7 +73,7 @@ namespace bbs_reader
                     {
                         if (odr.GetFieldType(i).Equals(typeof(String)))
                         {
-                            row[i] = odr.GetOracleString(i).ToString();
+                            row[i] = odr.GetOracleString(i).IsNull ? "" : odr.GetOracleString(i).ToString();
                         }
                         if (odr.GetFieldType(i).Equals(typeof(Decimal)))
                         {

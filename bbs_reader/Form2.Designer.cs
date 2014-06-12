@@ -54,7 +54,7 @@
             // 
             this.user.Location = new System.Drawing.Point(51, 12);
             this.user.Name = "user";
-            this.user.Size = new System.Drawing.Size(165, 21);
+            this.user.Size = new System.Drawing.Size(148, 21);
             this.user.TabIndex = 0;
             this.user.Text = "hdeam_txn";
             // 
@@ -70,7 +70,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("宋体", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(222, 10);
+            this.button1.Location = new System.Drawing.Point(203, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(20, 23);
             this.button1.TabIndex = 2;
@@ -92,7 +92,7 @@
             this.password.Location = new System.Drawing.Point(51, 41);
             this.password.Name = "password";
             this.password.PasswordChar = '*';
-            this.password.Size = new System.Drawing.Size(165, 21);
+            this.password.Size = new System.Drawing.Size(148, 21);
             this.password.TabIndex = 3;
             this.password.Text = "hdeam_txn";
             // 
@@ -109,23 +109,22 @@
             // 
             this.db.Location = new System.Drawing.Point(51, 68);
             this.db.Name = "db";
-            this.db.Size = new System.Drawing.Size(165, 21);
+            this.db.Size = new System.Drawing.Size(148, 21);
             this.db.TabIndex = 5;
             this.db.Text = "192.168.6.249:1521/orcl";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(77, 103);
+            this.button2.Location = new System.Drawing.Point(77, 112);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
+            this.button2.TabIndex = 0;
             this.button2.Text = "确定";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.password);
             this.groupBox1.Controls.Add(this.user);
             this.groupBox1.Controls.Add(this.label3);
@@ -133,15 +132,15 @@
             this.groupBox1.Controls.Add(this.db);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(77, -1);
+            this.groupBox1.Location = new System.Drawing.Point(79, -1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(246, 101);
+            this.groupBox1.Size = new System.Drawing.Size(230, 101);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(158, 103);
+            this.button3.Location = new System.Drawing.Point(158, 112);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 9;
@@ -155,18 +154,18 @@
             this.toolStripMenuItem2,
             this.toolStripMenuItem3});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(112, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 48);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(111, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(100, 22);
             this.toolStripMenuItem2.Text = "3333";
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(111, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(100, 22);
             this.toolStripMenuItem3.Text = "44444";
             // 
             // pictureBox1
@@ -182,7 +181,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(329, 138);
+            this.ClientSize = new System.Drawing.Size(318, 147);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox1);

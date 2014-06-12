@@ -13,7 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>true</IsWebBootstrapper>
     <TargetFrameworkProfile />
-    <PublishUrl>E:\work\nginx\nginx-1.5.0\html\</PublishUrl>
+    <PublishUrl>E:\work\nginx\nginx-1.5.0\html\bbs_reader\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -23,11 +23,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://192.168.6.179:80/</InstallUrl>
+    <InstallUrl>http://192.168.6.179:80/bbs_reader/</InstallUrl>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>9</ApplicationRevision>
-    <ApplicationVersion>1.0.4.9</ApplicationVersion>
+    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationVersion>1.0.4.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -111,6 +111,12 @@
     <Compile Include="HttpHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuerySelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuerySelect.Designer.cs">
+      <DependentUpon>QuerySelect.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +136,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QuerySelect.resx">
+      <DependentUpon>QuerySelect.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="bbs_reader_1_TemporaryKey.pfx" />
     <None Include="bbs_reader_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
@@ -149,6 +158,10 @@
     <Content Include="AuthenticationDomainService.ico" />
     <Content Include="lib\NSoup.dll" />
     <Content Include="logo_hd.gif" />
+    <Content Include="res\arrow_rotate_clockwise.png" />
+    <Content Include="res\cog.png" />
+    <Content Include="res\help.png" />
+    <Content Include="res\page_excel.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

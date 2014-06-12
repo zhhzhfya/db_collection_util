@@ -13,3 +13,5 @@ C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_read
 C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\obj\Debug\bbs_reader.exe.manifest
 C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\obj\Debug\bbs_reader.application
 C:\Users\Administrator\documents\visual studio 2012\Projects\bbs_reader\bbs_reader\obj\Debug\bbs_reader.Form2.resources
+C:\Users\Administrator\documents\visual studio 2012\Projects\bbs_reader\bbs_reader\obj\Debug\bbs_reader.Form3.resources
+C:\Users\Administrator\documents\visual studio 2012\Projects\bbs_reader\bbs_reader\obj\Debug\bbs_reader.querySelect.resources
