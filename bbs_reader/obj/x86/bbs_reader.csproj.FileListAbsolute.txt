@@ -13,3 +13,4 @@ C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_read
 C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\obj\x86\bbs_reader.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\obj\x86\bbs_reader.Form3.resources
 C:\Users\Administrator\documents\visual studio 2012\Projects\bbs_reader\bbs_reader\obj\x86\bbs_reader.querySelect.resources
+C:\Users\Administrator\documents\visual studio 2012\Projects\bbs_reader\bbs_reader\bin\x86\NPOI.dll

@@ -58,14 +58,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bbs_reader.exe" size="94720">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="bbs_reader.exe" size="96768">
       <assemblyIdentity name="bbs_reader" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>SLWCUDEdG2PREYsCGcv0YtJiims=</dsig:DigestValue>
+        <dsig:DigestValue>B/HmqdgIXIzl9adOq5iCucmRqyM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NPOI.dll" size="1454080">
+      <assemblyIdentity name="NPOI" version="1.2.5.0" publicKeyToken="0DF73EC7942B34E1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>5qy6rQctdeTQFT8vzx5NUtHGV3c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -97,6 +109,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>+pjMBs5NArDJ3ayJ28o3xy6kRsc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="lib\NPOI.dll" size="1454080">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5qy6rQctdeTQFT8vzx5NUtHGV3c=</dsig:DigestValue>
     </hash>
   </file>
   <file name="lib\NSoup.dll" size="267264">

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NPOI.HSSF.UserModel;
+using NPOI.SS.UserModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +24,7 @@ namespace bbs_reader
                                and m.table_code_action = t.table_code
                                and t.table_type = 1
                              order by f.module_code, f.func_code";
+        static string SelectedPath = "";
         public Form3()
         {
             InitializeComponent();
@@ -33,6 +36,18 @@ namespace bbs_reader
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            genDataToView();
+            if (!this.tableCodeQry.Text.Equals(""))
+            {
+                var q1 = from dt1 in dt.AsEnumerable()//查询
+                         where dt1.Field<string>("功能编码").Contains(this.tableCodeQry.Text.ToUpper())//条件
+                         select dt1;
+                dataGridView1.DataSource = q1.AsDataView();
+            }
+        }
+        // 填充datagridview
+        private void genDataToView()
         {
             dt = DbUtil.query(sql);
             dataGridView1.DataSource = dt;
@@ -46,7 +61,7 @@ namespace bbs_reader
         {
             if (dt == null)
             {
-                dt = DbUtil.query(sql);
+                genDataToView();
             }
             var q1 = from dt1 in dt.AsEnumerable()//查询
                      where dt1.Field<string>("功能编码").Contains(this.tableCodeQry.Text.ToUpper())//条件
@@ -61,6 +76,11 @@ namespace bbs_reader
 
         private void 导出数据收集模版ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.folderBrowserDialog1.SelectedPath = "D:";
+            if (this.folderBrowserDialog1.ShowDialog() == DialogResult.Cancel || this.folderBrowserDialog1.SelectedPath.Equals(""))
+            {
+                return;
+            }
             foreach (DataGridViewRow dv in dataGridView1.SelectedRows)
             {
                 string funcCode = dv.Cells["功能编码"].Value.ToString();
@@ -76,17 +96,41 @@ namespace bbs_reader
                                    (select f.form_code
                                       from sy_form_def f, sy_func c
                                      where f.form_code = c.func_info
-                                       and c.func_code = 'EQ_EQUIP'
+                                       and c.func_code = '" + funcCode + @"'
                                        and rownum = 1) fm
                              where t.fitem_flag = 1
                                and t.form_code = fm.form_code
                                and t.fitem_type = 'TAB'
                              order by t.fitem_card_order asc";
-                DataTable dt1 = dt = DbUtil.query(sql1);
-
+                exportTemplates(funcCode, DbUtil.query(sql1), dataGridView1.SelectedRows.Count);
             }
-
+            this.tProgressBar1.Value = 0;
+            this.toolStripStatusLabel1.Text = "全部导出完成";
         }
+        private void exportTemplates(string funcCode, DataTable dt, int select_rows_count)
+        {
+            // FITEM_CODE,FITEM_NAME,FITEM_DATA_TYPE,FITEM_LENGTH,FITEM_INPUT_TYPE,FITEM_CARD_DEFAULT,DIC_CODE,FITEM_COMMENT
+            HSSFWorkbook wk = new HSSFWorkbook();
+            ISheet tb = wk.CreateSheet("Sheet");
+            IRow row0 = tb.CreateRow(0);
+            IRow row1 = tb.CreateRow(1);
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                DataRow row = dt.Rows[i];
+                tb.SetColumnWidth(i, (int)((12 + 0.72) * 256));// 宽为20
+                ICell cell0 = row0.CreateCell(i);
+                cell0.SetCellValue(row["FITEM_CODE"].ToString());
+                ICell cell1 = row1.CreateCell(i);
+                cell1.SetCellValue(row["FITEM_NAME"].ToString());
+            }
+            using (FileStream fs = File.OpenWrite(this.folderBrowserDialog1.SelectedPath + "/" + funcCode + ".xls"))
+            {
+                wk.Write(fs);   //向打开的这个xls文件中写入mySheet表并保存。
+                this.tProgressBar1.Value += 100 / select_rows_count;
+                this.toolStripStatusLabel1.Text = funcCode + "导出完成";
+            }
+        }
+
 
         private void 导出ERPToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -96,24 +140,22 @@ namespace bbs_reader
 
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
-            string html = "@006|销售代表|4010200@008|客户代表|4010200@011";
-            string[] list = html.ToLower().Split('|');
-            string result = "";
-            for (int i = 0; i < list.Length; i++)
-            {
-                result += list[i].Trim() + "\r\n";
-                //if (list[i].Trim().Contains("@") || list[i].Trim().Contains("其他"))
-                //{
-
-                //}
-                //else
-                //{
-                //    result += list[i].Trim() + "\r\n";
-                //}
-            }
-            StreamWriter sw = new StreamWriter("D:\\abc.xls", false, System.Text.Encoding.UTF8);
-            sw.WriteLine(result);
-            sw.Close();
+            //SaveFileDialog saveFileDialog = new SaveFileDialog();
+            //saveFileDialog.Filter = "Execl files (*.xls)|*.xls";
+            //saveFileDialog.FilterIndex = 0;
+            //saveFileDialog.RestoreDirectory = true;
+            //saveFileDialog.CreatePrompt = true;
+            //saveFileDialog.Title = "**数据";
+            //saveFileDialog.ShowDialog();
+            //if (saveFileDialog.FileName == "")
+            //    return;
         }
+
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            MessageBox.Show(this.dataGridView1.CurrentRow.Cells["功能编码"].Value.ToString());
+        }
+
+        
     }
 }

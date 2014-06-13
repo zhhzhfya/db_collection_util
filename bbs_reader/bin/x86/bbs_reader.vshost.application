@@ -11,14 +11,14 @@
     <deploymentProvider codebase="http://192.168.6.179/bbs_reader/bbs_reader.application" />
   </deployment>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="bbs_reader.exe.manifest" size="7667">
+    <dependentAssembly dependencyType="install" codebase="bbs_reader.exe.manifest" size="8686">
       <assemblyIdentity name="bbs_reader.exe" version="1.0.4.10" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>frgkY0wYxHHrLGMUrpbo2VXFNPE=</dsig:DigestValue>
+        <dsig:DigestValue>UMrzlq9oN8oY6J5teQGR6Ol9S1E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -71,6 +71,10 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NPOI, Version=1.2.5.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\NPOI.dll</HintPath>
+    </Reference>
     <Reference Include="NSoup, Version=0.7.1.0, Culture=neutral, PublicKeyToken=6d44e53f0a65e802, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\NSoup.dll</HintPath>
@@ -156,6 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AuthenticationDomainService.ico" />
+    <Content Include="lib\NPOI.dll" />
     <Content Include="lib\NSoup.dll" />
     <Content Include="logo_hd.gif" />
     <Content Include="res\arrow_rotate_clockwise.png" />
