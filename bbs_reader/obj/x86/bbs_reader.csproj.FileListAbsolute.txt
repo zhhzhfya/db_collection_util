@@ -14,3 +14,10 @@ C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_read
 C:\Users\Administrator\Documents\Visual Studio 2012\Projects\bbs_reader\bbs_reader\obj\x86\bbs_reader.Form3.resources
 C:\Users\Administrator\documents\visual studio 2012\Projects\bbs_reader\bbs_reader\obj\x86\bbs_reader.querySelect.resources
 C:\Users\Administrator\documents\visual studio 2012\Projects\bbs_reader\bbs_reader\bin\x86\NPOI.dll
+E:\work\workspace_c#\db_collection_util\bbs_reader\bin\x86\bbs_reader.exe.config
+E:\work\workspace_c#\db_collection_util\bbs_reader\obj\x86\bbs_reader.exe
+E:\work\workspace_c#\db_collection_util\bbs_reader\obj\x86\bbs_reader.csprojResolveAssemblyReference.cache
+E:\work\workspace_c#\db_collection_util\bbs_reader\obj\x86\bbs_reader.Form1.resources
+E:\work\workspace_c#\db_collection_util\bbs_reader\obj\x86\bbs_reader.Form2.resources
+E:\work\workspace_c#\db_collection_util\bbs_reader\obj\x86\bbs_reader.Form3.resources
+E:\work\workspace_c#\db_collection_util\bbs_reader\obj\x86\bbs_reader.csproj.GenerateResource.Cache
